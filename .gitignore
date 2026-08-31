@@ -1,0 +1,20 @@
+# 依赖与构建产物
+node_modules/
+dist/
+.venv/
+__pycache__/
+*.pyc
+
+# 环境变量
+.env
+
+# 数据与模型（大文件不入库）
+data/*.mat
+data/*.csv
+models/*.joblib
+models/*.pkl
+
+# 日志与系统文件
+*.log
+.DS_Store
+Thumbs.db

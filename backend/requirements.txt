@@ -1,0 +1,8 @@
+# 后端依赖（conda activate SEED 后：pip install -r requirements.txt）
+# 真实模型版只需要这一小套，全部是常用的数据/机器学习库
+fastapi>=0.110
+uvicorn[standard]>=0.29
+numpy>=1.26
+pandas>=2.0
+scikit-learn>=1.4
+joblib>=1.3

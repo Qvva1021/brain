@@ -1,0 +1,145 @@
+/* 脑电情绪识别演示系统 · 全局基础样式（科研仪表盘风格，见 docs/04） */
+
+:root {
+  font-family: -apple-system, 'Segoe UI', 'Microsoft YaHei', sans-serif;
+}
+
+body {
+  margin: 0;
+  background: #f0f2f5;
+  color: #1f2329;
+}
+
+/* 页面整体布局 */
+.app-layout {
+  min-height: 100vh;
+}
+
+/* 顶部导航栏 */
+.app-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #001529;
+  padding: 0 24px;
+  line-height: normal;
+}
+
+.app-header .header-title {
+  margin: 0;
+  color: #fff;
+  font-size: 18px;
+}
+
+.app-header .header-subtitle {
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 13px;
+}
+
+.app-header .header-right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #fff;
+  font-size: 14px;
+}
+
+/* 连接状态圆点 */
+.status-dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin-right: 6px;
+  vertical-align: middle;
+}
+
+.status-dot.online {
+  background: #52c41a;
+  box-shadow: 0 0 6px #52c41a;
+}
+
+.status-dot.offline {
+  background: #f5222d;
+}
+
+/* 左侧控制面板 */
+.app-sider {
+  border-right: 1px solid #e5e6eb;
+  overflow-y: auto;
+  padding: 8px;
+  background: #fff !important;
+}
+
+/* 主显示区 */
+.app-content {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* 结果卡片与历史记录并列 */
+.result-row {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.result-row > * {
+  flex: 1 1 300px;
+  min-width: 280px;
+}
+
+/* 情绪大字 */
+.emotion-big {
+  font-size: 32px;
+  font-weight: 700;
+  margin: 8px 0 4px;
+}
+
+/* 频段色块说明 */
+.band-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  color: #86909c;
+  margin-right: 12px;
+}
+
+.band-chip .band-color {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border-radius: 2px;
+}
+
+/* 底部状态栏 */
+.app-footer {
+  background: #fff;
+  border-top: 1px solid #e5e6eb;
+  padding: 10px 24px;
+  color: #86909c;
+  font-size: 13px;
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+}
+
+/* 运行日志颜色 */
+.log-info {
+  color: #1f2329;
+}
+
+.log-success {
+  color: #52c41a;
+}
+
+.log-warning {
+  color: #faad14;
+}
+
+.log-error {
+  color: #f5222d;
+}
